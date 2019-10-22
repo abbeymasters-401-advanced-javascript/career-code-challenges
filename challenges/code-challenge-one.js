@@ -11,7 +11,6 @@ function add(date, diff) {
   if(endChar === 'M') theNewDate = new Date(date.setMonth(date.getMonth() + num));
   if(endChar === 'y') theNewDate = new Date(date.setFullYear(date.getFullYear() + num));
   
-  console.log(theNewDate);
   return theNewDate;
 }
 
