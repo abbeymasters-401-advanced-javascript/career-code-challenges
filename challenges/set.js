@@ -1,6 +1,7 @@
 class Set {
   constructor(array) {
     this.array = array;
+    if(!array) this.array = [];
   }
 
   add(value) {
@@ -20,7 +21,7 @@ class Set {
   intersection(set) {
     const newSet = new Set();
     for(let i = 0; i < set.array.length; i++) {
-      if(set.array.includes(set.array[i])) newSet.add(set.array[i]);
+      if(this.array.includes(set.array[i])) newSet.add(set.array[i]);
     }
     return newSet;
   }
