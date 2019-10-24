@@ -8,10 +8,10 @@ function revenue(transactions) {
     let date = timestamp.slice(5, 7);
     let year = timestamp.slice(12, 16);
 
-    let fullDate = day.concat(` ${month} ${date} ${year}`);    
+    let fullDate = day.concat(` ${month} ${date} ${year}`);
     const price = Number(transaction.price);
-    
-    if(!newObj[fullDate]) newObj[fullDate] = price;
+
+    if (!newObj[fullDate]) newObj[fullDate] = price;
     else newObj[fullDate] += price;
   });
   return newObj;
